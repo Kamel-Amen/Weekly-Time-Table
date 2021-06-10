@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thursday :: Weekly Time Table</title>
+    <link rel="stylesheet" href="../Files/Bootstrap-4 Files/bootstrap.min.css">
+    <link rel="stylesheet" href="../Files/Styles/Thursday/thursday.css">
+    <link rel="shortcut icon" href="../Images/Logo/3.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navBar">
+        <!--Left Menu-->
+        <div class="leftMenu">
+            <div class="logo"><a href="../main.html"><img src="../Images/Logo/3.png" alt="logo"></a></div>
+            <span>Home-Page</span>
+        </div>
+        <!--Left Menu-->
+        <!--Right Menu-->
+        <div class="rightMenu">
+            <ul id="ul1">
+                <li><a id="first" href="../main.html">Home</a></li>
+                <li><a href="saturday.html">Saturday</a></li>
+                <li><a href="sunday.html">Sunday</a></li>
+                <li><a href="monday.html">Monday</a></li>
+                <li><a href="tuesday.html">Tuesday</a></li>
+                <li><a href="wednesday.html">Wednesday</a></li>
+                <li><a id="first" href="thursday.html">Thursday</a></li>
+                <li><a href="friday.html">Friday</a></li>
+            </ul>
+        </div>
+        <!--Right Menu-->
+    </div>
+
+    <!--Output Notes-->
+    <div id="app" class="app row m-0">
+        <div class="leftSide col-4">
+            <header class="header">Add Appointment Form</header>
+            <form id="add-Appointment-Form">
+                <input class="form-control" id="appointmentField" type="text"
+                    placeholder="Write New Appointment Then Hit Enter" required />
+            </form>
+        </div>
+
+        <div class="rightSide col-8">
+            <header class="header">Appointments</header>
+            <ul id="appointments-List"></ul>
+            <button class="btn btn-danger" id='clear'>Clear All Appointments</button>
+        </div>
+    </div>
+    <!--Output Notes-->
+    <div class="dayLogo">THURSDAY</div>
+
+    <script src="../Files/Bootstrap-4 Files/jquery.min.js"></script>
+    <script src="../Files/Bootstrap-4 Files/bootstrap.min.js"></script>
+    <script src="../Files/Scripts/Thursday/thursday.js"></script>
+</body>
+
+</html>

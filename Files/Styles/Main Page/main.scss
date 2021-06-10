@@ -1,0 +1,99 @@
+/* Start Body */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+/* End Body */
+
+/* Start Cover */
+.cover {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  & > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+  }
+  & > .content {
+    position: relative;
+    text-align: center;
+    & > h1 {
+      color: #fff;
+      margin: 0 0 50px;
+      padding-top: 25px;
+      font: normal 2.8em / normal "Josefin Sans";
+      text-shadow: 3px 3px 3px #000;
+      text-decoration: underline;
+    }
+    & > .days {
+      width: 75%;
+      height: 100%;
+      margin: 0 auto;
+      & > button {
+        width: 10%;
+        display: block;
+        margin: 0 auto 15px;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          width: 100%;
+          border-radius: 25px;
+        }
+        & > a {
+          font: normal 1.5em / normal "Gabriola";
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Cover */
+
+/* Start About-Me */
+.holder {
+  perspective: 500px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  &:hover {
+    & > .about-me {
+      width: 150px;
+      height: 50px;
+      border-bottom-right-radius: 15px;
+      & > a {
+        transform: rotate(0);
+        top: 4px;
+        left: 35px;
+      }
+    }
+  }
+  & > .about-me {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    background: #dc3545;
+    border-bottom-right-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    & > a {
+      position: absolute;
+      color: #fff;
+      font: normal 2em / normal "Londrina Solid";
+      transform: rotateZ(-35deg);
+      top: 15px;
+      transition: all 0.5s ease-in-out 0.5s;
+    }
+  }
+}
+/* End About-Me */

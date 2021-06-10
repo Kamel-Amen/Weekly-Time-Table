@@ -1,0 +1,119 @@
+/* Start Variables */
+/* End Variables */
+/* Start Body */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #111; }
+
+/* End Body */
+/* Start NavBar */
+.navBar {
+  width: 100%;
+  background-color: #e0a800;
+  height: 15px;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 0 0 25px 25px;
+  border: 3px solid #ddd;
+  border-top: 0;
+  margin-bottom: 50px; }
+  .navBar:hover {
+    height: 80px; }
+    .navBar:hover > .leftMenu, .navBar:hover > .rightMenu {
+      opacity: 1; }
+  .navBar > .leftMenu {
+    position: relative;
+    float: left;
+    width: 25%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.5s; }
+    .navBar > .leftMenu:hover > .logo {
+      transform: translateX(-95px); }
+    .navBar > .leftMenu:hover > span {
+      opacity: 1; }
+    .navBar > .leftMenu > .logo {
+      margin: 4px auto;
+      width: 70px;
+      height: 70px;
+      border: 1px solid #ddd;
+      background: #eee;
+      border-radius: 50%;
+      padding-right: 4px;
+      transition: transform 0.5s ease-in-out; }
+      .navBar > .leftMenu > .logo > a > img {
+        width: 100%;
+        height: 100%; }
+    .navBar > .leftMenu > span {
+      position: absolute;
+      top: 25px;
+      left: 125px;
+      color: #eee;
+      text-shadow: 2px 2px 2px #000;
+      font: normal 2em / normal "Josefin Sans";
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out 0.25s; }
+  .navBar > .rightMenu {
+    float: right;
+    width: 75%;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.5s; }
+    .navBar > .rightMenu > ul {
+      list-style-type: none; }
+      .navBar > .rightMenu > ul > li {
+        display: inline-block;
+        margin: 30px 25px 0 0;
+        font: normal 1.5em / normal "Josefin Sans";
+        text-shadow: 2px 2px 2px #000; }
+        .navBar > .rightMenu > ul > li > a {
+          color: #ffcb2e;
+          text-decoration: none; }
+          .navBar > .rightMenu > ul > li > a:hover {
+            color: #fff;
+            transition: 0.5s; }
+
+/* End NavBar */
+/* start Main Output */
+.app > .leftSide {
+  text-align: center; }
+.app > .rightSide {
+  text-align: center; }
+  .app > .rightSide > ul {
+    margin-left: 40px;
+    text-align: left;
+    list-style: decimal; }
+    .app > .rightSide > ul > li {
+      font: normal 1.5em / normal "Josefin Sans";
+      color: #ddd; }
+
+/* End Main Output */
+/* Start Day Logo */
+.dayLogo {
+  position: fixed;
+  font: normal 13em / normal "Josefin Sans";
+  transform: rotateZ(-10deg);
+  top: 250px;
+  left: 150px;
+  z-index: -1;
+  text-shadow: 5px 5px 5px #000; }
+
+/* End Day Logo */
+/* Default Classes & IDs */
+#first {
+  color: #fff;
+  border-top: 3px solid #fff;
+  padding-top: 5px; }
+
+.header {
+  font: normal 2em / normal "Raleway";
+  color: #ddd;
+  text-shadow: 1px 1px 1px #444;
+  margin-bottom: 25px;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=monday.css.map */
